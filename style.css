@@ -1,0 +1,312 @@
+/* Start Global Normlization */
+:root {
+    --main-padding: 16px;
+    --sec-padding: 8px;
+    --maign-margin: 16px;
+    --main-transition: 0.2s;
+    --main-gap: 16px;
+}
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    -o-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+}
+
+ul {
+    list-style: none;
+}
+
+a {
+    text-decoration: none;
+    color: black
+}
+
+html {
+    scroll-behavior: smooth
+}
+
+body {
+    font-family: "poppin", sans-serif;
+}
+
+.container {
+    width: 85%;
+    margin: 0 auto;
+}
+
+img {
+    width: 100%;
+}
+
+.flex-between {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: var(--main-gap)
+}
+
+.section {
+    padding: 50px 0
+}
+
+/*End Global Normlization */
+/* Start nAVBAR */
+.nav {
+    background-color: white;
+}
+
+.nav .container {}
+
+.nav .container .parent {}
+
+.nav .container .parent ul {}
+
+.nav .container .parent .img {
+    width: 80px;
+}
+
+.nav .container ul li a {
+    display: block;
+    padding: var(--main-padding);
+    transition: var(--main-transition)
+}
+
+.nav .container ul li a.sign {
+    background-color: black;
+    color: white;
+}
+
+.nav .container ul li a:hover {
+    color: white;
+    background-color: black
+}
+
+/* eND nAVBAR */
+
+/* Start Lnading */
+.landing {
+    height: 75vh;
+    justify-content: center;
+    background-image: linear-gradient(rgba(4, 34, 69, 0.413), rgba(4, 34, 69, 0.413)), url("./Images/Montage-Beverly-Hills.jpg");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    /* background-color: red !important */
+    /* position: relative; */
+}
+
+/* .landing::after {
+    content: '';
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.338);
+    ;
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 0
+} */
+
+.landing .container {
+    text-align: center;
+    color: white;
+    padding: var(--main-padding);
+    /* box-shadow: x y blur spread color */
+    box-shadow: 0 0 10px 5px black
+        /* position: relative;
+    z-index: 1; */
+
+}
+
+.landing .container h1 {}
+
+.landing .container p {
+    margin: var(--maign-margin) 0
+}
+
+.landing .container button {
+    background-color: transparent;
+    color: white;
+    border: 1px solid white;
+    padding: var(--main-padding) calc(var(--main-padding) * 2)
+}
+
+/* End  Lnading */
+
+/* Start Cards */
+.cards {}
+
+.cards .container {
+    /* display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(calc((100% / 3) - (32px / 3)), 1fr));
+    gap: var(--main-gap) */
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-flow: wrap;
+    gap: 16px
+}
+
+.cards .container .card {
+    /* width: 300px; */
+    width: calc((100% / 3) - (32px / 3));
+    flex-grow: 1;
+    border: 2px solid black
+}
+
+/* @media (min-width:0px) and (max-width:767px) {
+    .cards .container .card {
+        width: 100%;
+        flex-grow: 1
+    }
+}
+
+@media (min-width:768px) and (max-width:991px) {
+    .cards .container .card {
+        width: calc((100% / 2) - (16px / 2));
+        flex-grow: 1
+    }
+} */
+
+/* .cards .container .card .img {} */
+
+.cards .container .card .content {
+    padding: var(--sec-padding);
+}
+
+.cards .container .card .content h2 {}
+
+.cards .container .card .content p {
+    margin: var(--sec-padding) 0
+}
+
+.cards .container .card .content .spans {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding-top: var(--sec-padding);
+    margin-top: var(--sec-padding);
+    border-top: 1px solid black
+}
+
+
+
+/* End Cards */
+/* Start App */
+.app {
+    background-color: rgb(232, 232, 232)
+}
+
+.app .container {}
+
+/* eND App */
+
+/* Start Booking */
+/* .booking {} */
+
+.booking .container .box-container {}
+
+.booking .container .box-container .box {
+    height: 30vh;
+    background-color: green;
+    padding: var(--main-padding);
+    display: flex;
+    align-items: center;
+    background-image: linear-gradient(rgba(0, 0, 0, 0.42), rgba(0, 0, 0, 0.42)), url("./Images/01.jpg");
+    background-position: center;
+    background-size: cover;
+    color: white
+}
+
+.booking .container .box-container .box button {
+    display: block;
+    padding: var(--main-padding) calc(var(--main-padding) * 2);
+    margin-top: var(--maign-margin);
+    background-color: transparent;
+    color: white;
+    border: 1px solid
+}
+
+
+.booking .container .box-container.first .box {
+    width: calc((100% / 2) - (16px / 2))
+}
+
+.booking .container .box-container.secound {
+    margin-top: var(--maign-margin);
+}
+
+.booking .container .box-container.secound .box {
+    width: calc((100% / 3) - (32px / 3))
+}
+
+/* End Booking */
+
+footer {
+    background-color: rgb(70, 70, 70);
+    color: white
+}
+
+footer .container {}
+
+footer .container ul {}
+
+footer .container ul li:first-child {
+    font-size: 1.2rem;
+    padding-bottom: 10px;
+    font-weight: bold
+}
+
+footer .container ul:last-child li:not(:first-child) {
+    display: inline-block
+}
+
+footer p {
+    text-align: center;
+    padding-top: 50px;
+}
+
+
+/* Media */
+@media (min-width:0) and (max-width:767px) {
+    .flex-between {
+        flex-direction:
+            column
+    }
+
+    .booking .container .box-container.first .box {
+        width: 100%
+    }
+
+    .booking .container .box-container.secound .box {
+        width: 100%
+    }
+
+    footer .container ul {
+        width: 100%
+    }
+
+    .cards .container .card {
+        width: 100%
+    }
+}
+
+@media (min-width:768px) and (max-width:991px) {
+    .booking .container .box-container.secound {
+        flex-flow: wrap
+    }
+
+    .booking .container .box-container.secound .box {
+        width: calc((100% / 2) - (16px / 2));
+    }
+
+    .cards .container .card {
+        width: calc((100% / 2) - (16px / 2))
+    }
+}
+
+;
